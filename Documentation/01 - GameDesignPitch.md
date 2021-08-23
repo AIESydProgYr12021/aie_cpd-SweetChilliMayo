@@ -1,11 +1,10 @@
-# Game Design Pitch
-Black Hole Board Game
+# Black Hole
 
-## Working Title
-## Your game’s title should communicate the gameplay and the style of the game
+## Game Design Pitch
+Black Hole is a simple board game with both players having numbers ranging from 1-10, the aim of the game is to fill 20/21 cells with both players' tokens while ensuring your tokens are the least exposed at the end. After all tokens are placed, there will be one cell left unfilled, this cell is the 'black hole' and any cells adjacent to it will be summed for each player, whoever has the least score wins the round.
 
 ## Concept statement  
-The game in a tweet: one or two sentences at most that say what the game is and why it’s fun.  
+The game in a tweet: one or two sentences at most that say what the game is and why it’s fun.
 
 ## Target audience  
 Age, gender, game or other relevant interests
