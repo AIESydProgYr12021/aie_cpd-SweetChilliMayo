@@ -1,5 +1,4 @@
 # Black Hole
-
 ## Game Design Pitch
 Black Hole is a simple board game with both players having numbers ranging from 1-10, the aim of the game is to fill 20/21 cells with both players' tokens while ensuring your tokens are the least exposed at the end. After all tokens are placed, there will be one cell left unfilled, this cell is the 'black hole' and any cells adjacent to it will be summed for each player, whoever has the least score wins the round.
 
