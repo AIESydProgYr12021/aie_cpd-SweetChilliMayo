@@ -28,22 +28,26 @@ Board Game
 - Unity.
 
 ## Visual/audio Style
-## What is the "look and feel" of the game? How does this support the desired player’s experience? What concept art or reference art can you show to give the feel of the game?
-
-
-
+### What concept art or reference art can you show to give the feel of the game?
+The game will be a very stylized look, aiming to make use of unity's particle system and universal render pipeline to create stunning vfx to brighten up the game world. The desired experience is a bright and exciting game to help the players enjoy the game a lot more when competing against friends and family.
 
 ## Game Systems
-## What systems are needed to make this game? Which ones are internal (simulation, etc.) and which does the player interact with?
+### What systems are needed to make this game? Which ones are internal (simulation, etc.) and which does the player interact with?
+### Game State
+A game state checker is a necessary component of the game, this will check the game for when it has been completed as well as give the respective scores to each player. These scores will then be compared and whoever has the lowest score wins the game.
+### Interactions
+Simple controls will be used to help the players interact with the game in an easy and understandable way. When it is a players turn, available cells will light up and the player's next token is already selected, all the player has to do is click/press on a cell for the token to be placed, after this the player can confirm their move with a button at the bottom of the screen.
+### Turn-Based System
+The game works on a turn based system where after every turn made, the current player switches to the next player.
 
 ## Interactivity
-## How are different kinds of interactivity used? (Perceptual, ST Cognitive, LT Cognitive, Emotional, Social, Cultural) What is the player doing Moment‐by‐moment? How does the player move through the world?  How does physics/combat/etc. work?
+### How are different kinds of interactivity used? (Perceptual, ST Cognitive, LT Cognitive, Emotional, Social, Cultural) What is the player doing Moment‐by‐moment? How does the player move through the world?  How does physics/combat/etc. work?
 
 ## Game UI:
-## A clear, professional‐looking sketch of the primary game UX is helpful.
-## - menu concept/wireframe
-## - game ui concept/wireframe
-## - gameover/win concept/wireframe
-## - highscores concept/wireframe
+### A clear, professional‐looking sketch of the primary game UX is helpful.
+### - menu concept/wireframe
+### - game ui concept/wireframe
+### - gameover/win concept/wireframe
+### - highscores concept/wireframe
 
 ![alt text](./images/350x150.png "Logo Title Text 1")
