@@ -1,6 +1,8 @@
 using WebSocketSharp;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
+
 namespace Sandbox.Networking
 {
 
@@ -15,13 +17,18 @@ namespace Sandbox.Networking
     {
         WebSocket ws;
 
+        string text = "";
+        public Text testText;
+
         void Start()
         {
             ws = new WebSocket("ws://localhost:8080");
+            //ws = new WebSocket("ws://blackhole-test-server.herokuapp.com");
             ws.OnMessage += (sender, e) =>
             {
                 MyData data = JsonUtility.FromJson<MyData>(e.Data);
                 Debug.Log($"Message Received from {((WebSocket)sender).Url}, Data: {data.name}, {data.age}");
+                text = $"Message Received from {((WebSocket)sender).Url}, Data: {data.name}, {data.age}";
             };
 
             ws.Connect();
@@ -31,6 +38,8 @@ namespace Sandbox.Networking
         {
             if (ws == null)
                 return;
+
+            testText.text = text;
 
             if (Input.GetKeyDown(KeyCode.Space))
             {

@@ -2,7 +2,7 @@ const WebSocket = require('ws');
 
 const port = process.env.PORT || 8080;
 
-//let connections = [];
+let connections = [];
 
 //let myDictionary = {};
 
@@ -19,7 +19,11 @@ wss.on('connection', (ws)=>{
 
   ws.on('message', (data)=>{
     console.log('data received: ' + data);
-    ws.send(data.toString());
+    //ws.send(data.toString());
+
+    for (let i = 0; i < connections.length; i++){
+      connections[i].send(data.toString());
+    }
 
     //myDictionary[data.targetWsId].send(data);
 
