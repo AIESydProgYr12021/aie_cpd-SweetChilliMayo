@@ -20,6 +20,6 @@ Reason for use: describe what this asset is used for
 
 Asset Name: `insert name here`
 
-URL: `unsert link to asset`
+URL: `insert link to asset`
 
 Reason for use: describe what this asset is used for

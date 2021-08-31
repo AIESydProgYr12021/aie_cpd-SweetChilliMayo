@@ -22,8 +22,8 @@ namespace Sandbox.Networking
 
         void Start()
         {
-            ws = new WebSocket("ws://localhost:8080");
-            //ws = new WebSocket("ws://blackhole-test-server.herokuapp.com");
+            //ws = new WebSocket("ws://localhost:8080");
+            ws = new WebSocket("ws://blackhole-test-server.herokuapp.com");
             ws.OnMessage += (sender, e) =>
             {
                 MyData data = JsonUtility.FromJson<MyData>(e.Data);
