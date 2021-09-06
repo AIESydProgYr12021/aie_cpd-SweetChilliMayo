@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BoardManager : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class BoardManager : MonoBehaviour
     public List<int> numberList2 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
     public List<Cell> availableCells = new List<Cell>();
+
+    public GameObject winScreen;
+    public TMP_Text player1Text;
+    public TMP_Text player2Text;
 
     private void Awake()
     {
@@ -41,7 +46,13 @@ public class BoardManager : MonoBehaviour
 
     public void SinkCell()
     {
-        if (availableCells[0].neighbours.Count < 1) return;
+        if (availableCells[0].neighbours.Count < 1) 
+        {
+            player1Text.text = player1Score.ToString();
+            player2Text.text = player2Score.ToString();
+            winScreen.SetActive(true);
+            return; 
+        }
 
         Cell cell = availableCells[0].neighbours[0];
 

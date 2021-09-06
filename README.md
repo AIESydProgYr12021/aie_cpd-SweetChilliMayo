@@ -1,16 +1,12 @@
-# PROJECT NAME
+# Black Hole
 
 ## About the Game
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Black Hole is a simple turn based board game where two players competitively place numbered tokens on the board until there is one empty cell left, this cell is called the black hole and the surrounding scores are counted, whoever has the lowest score after the score is counted wins the game.
 
 ### Contributors:
-Contributors to the project are strictly limated to AIE Students as part of their group work project.
+This version of Black Hole was created by Daniel Mayo.
 
-Members (example):
- - John Doe: designer
- - John Smith: programmer
- - Sandra Dee: artist
-
+Inspired by Wal Joris (https://nestorgames.com)
 
 ## Build Steps:
 The project can currently be built for both windows and webgl in the following ways:
@@ -27,13 +23,14 @@ The project can currently be built for both windows and webgl in the following w
   * Double click on `build_all.bat`
   * The process will take some time, leave the console window open
   * The following files will be produced:
-    * PC Build: `builds/pc/YourGame.exe` 
+    * PC Build: `builds/pc/YourGame.exe`
     * WebGL Build: `builds/web/index.html`
 
 ## Daily Builds:
-Daily builds of the project should be placed on the local campus network drive
-
-
+Daily Builds of the project are created and stored on my (Daniel Mayo) computer.
 
 # Credits:
- Are there assets, sounds or media included within the project that require attributation? list them here:
+#### Special Mentions
+- Aaron Cox (Teacher)
+- Benjamin Scott (Tester)
+- Samnang Yorng (Tester)

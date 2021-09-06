@@ -24,6 +24,7 @@ public class Cell : MonoBehaviour
             this.number = number;
             text.text = number.ToString();
 
+            colorMaterial = material;
             ringRenderer.material = material;
         }
         else
@@ -31,6 +32,7 @@ public class Cell : MonoBehaviour
             this.number = 0;
             text.text = "";
 
+            colorMaterial = defaultMaterial;
             ringRenderer.material = defaultMaterial;
         }
     }
