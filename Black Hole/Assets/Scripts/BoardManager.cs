@@ -45,15 +45,15 @@ public class BoardManager : MonoBehaviour
 
     private void Update()
     {
-        foreach (GameObject token in blueNumbers)
-        {
-            token.GetComponent<Image>().sprite = currentPlayer == 1 ? filledRing : ring;
-        }
+        //foreach (GameObject token in blueNumbers)
+        //{
+        //    token.GetComponent<Image>().sprite = currentPlayer == 1 ? filledRing : ring;
+        //}
 
-        foreach (GameObject token in redNumbers)
-        {
-            token.GetComponent<Image>().sprite = currentPlayer == 2 ? filledRing : ring;
-        }
+        //foreach (GameObject token in redNumbers)
+        //{
+        //    token.GetComponent<Image>().sprite = currentPlayer == 2 ? filledRing : ring;
+        //}
     }
 
     public void CheckState()
