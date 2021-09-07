@@ -48,15 +48,17 @@ public class Cell : MonoBehaviour
 
         BoardManager manager = BoardManager.instance;
 
-        if (BoardManager.instance.currentPlayer == 1)
+        if (manager.currentPlayer == 1)
         {
             SetNumber(manager.numberList1[0], manager.player1);
+            manager.RemoveBlue(0);
             manager.numberList1.RemoveAt(0);
             manager.currentPlayer = 2;
         }
         else
         {
             SetNumber(manager.numberList2[0], manager.player2);
+            manager.RemoveRed(0);
             manager.numberList2.RemoveAt(0);
             manager.currentPlayer = 1;
         }
