@@ -17,7 +17,7 @@ public class Cell : MonoBehaviour
 
     bool isSinking = false;
 
-    void SetNumber(int number, Material material)
+    public void SetNumber(int number, Material material)
     {
         if (number != 0)
         {
@@ -44,28 +44,26 @@ public class Cell : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (number != 0) return;
-
         BoardManager manager = BoardManager.instance;
+
+        if (number != 0 || !manager.canPlace) return;
+
+        manager.canPlace = false;
 
         if (manager.currentPlayer == 1)
         {
-            SetNumber(manager.numberList1[0], manager.player1);
-            manager.RemoveBlue(0);
+            manager.PlaceBlue(0, this, manager.numberList1[0], manager.player1);
             manager.numberList1.RemoveAt(0);
             manager.currentPlayer = 2;
         }
         else
         {
-            SetNumber(manager.numberList2[0], manager.player2);
-            manager.RemoveRed(0);
+            manager.PlaceRed(0, this, manager.numberList2[0], manager.player2);
             manager.numberList2.RemoveAt(0);
             manager.currentPlayer = 1;
         }
 
         manager.availableCells.Remove(this);
-
-        manager.CheckState();
     }
 
     float lerpTime = 0;
