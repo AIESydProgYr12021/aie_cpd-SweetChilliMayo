@@ -27,7 +27,7 @@ public class Builder
         Debug.Log("Finished Windows Build");
 
         Debug.Log("Starting Android Build");
-        //BuildPipeline.BuildPlayer(levels, androidFileName, BuildTarget.Android, BuildOptions.None);
+        BuildPipeline.BuildPlayer(levels, androidFileName, BuildTarget.Android, BuildOptions.None);
         Debug.Log("Finished Android Build");
 
         Thread.Sleep(2000);

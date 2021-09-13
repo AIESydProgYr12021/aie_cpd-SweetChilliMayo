@@ -49,5 +49,3 @@ The game works on a turn based system where after every turn made, the current p
 ##### - game ui concept/wireframe
 ##### - gameover/win concept/wireframe
 ##### - highscores concept/wireframe
-
-![alt text](./images/350x150.png "Logo Title Text 1")

@@ -24,6 +24,9 @@ public class BoardManager : MonoBehaviour
     public TMP_Text player2Text;
     public TMP_Text winText;
 
+    public AudioClip blackHoleSound;
+    public GameObject blackHoleParticle;
+
     public Sprite ring;
     public Sprite filledRing;
 
@@ -77,17 +80,19 @@ public class BoardManager : MonoBehaviour
             return;
         }
 
-        lerpTime += Time.deltaTime;
+        lerpTime += Time.deltaTime * 3;
 
-        if (lerpTime < 1.0f)
+        if (lerpTime < 1.1f)
         {
             currentMovingCell.transform.position = Vector3.Lerp(movingCellStart, movingCellEnd, lerpTime) + new Vector3(0, curve.Evaluate(lerpTime) * height, 0);
             currentMovingCell.transform.localScale = Vector3.Lerp(new Vector3(0.5f, 0.1f, 0.5f), new Vector3(1f, 0.12f, 1f), lerpTime);
         }
-        else if (lerpTime < 2f)
+        else if (lerpTime < 2.1f)
         {
             if (!effectPlaced)
             {
+                AudioManager.Instance.PlaySound(target.placeSound);
+
                 if (currentPlayer == 1)
                     Instantiate(placeEffectRed, target.transform.position, Quaternion.identity);
                 else
@@ -116,6 +121,9 @@ public class BoardManager : MonoBehaviour
     {
         if (availableCells.Count == 1)
         {
+            AudioManager.Instance.PlaySound(blackHoleSound);
+            availableCells[0].gameObject.SetActive(false);
+            Instantiate(blackHoleParticle, availableCells[0].transform.position, Quaternion.identity);
             SinkCell();
         }
     }

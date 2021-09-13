@@ -117,6 +117,8 @@ MonoBehaviour:
   defaultMaterial: {fileID: 2100000, guid: 833d95ec837fc534ea0c0e7ecff3a1c0, type: 2}
   colorMaterial: {fileID: 2100000, guid: 833d95ec837fc534ea0c0e7ecff3a1c0, type: 2}
   ringRenderer: {fileID: 1935148763329443421}
+  clickSound: {fileID: 8300000, guid: d6aff021a3e165443acb2431eab2be44, type: 3}
+  placeSound: {fileID: 8300000, guid: 429f80105629afa44be519ff3bf782b9, type: 3}
 --- !u!1 &2233458197030595858
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,7 +131,6 @@ GameObject:
   - component: {fileID: 8867783847091407329}
   - component: {fileID: 1935148763329443421}
   - component: {fileID: 6860358658336617052}
-  - component: {fileID: 6865861920551821280}
   m_Layer: 0
   m_Name: Cell
   m_TagString: Untagged
@@ -215,23 +216,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &6865861920551821280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2233458197030595858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57caee77f9a654d46ad41567399c6482, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbours: []
-  text: {fileID: 0}
-  defaultMaterial: {fileID: 0}
-  colorMaterial: {fileID: 0}
-  ringRenderer: {fileID: 0}
 --- !u!1 &7171116275711912510
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7171116275711912510}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 1.02, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75000006, z: 0.49999997}
   m_Children: []
   m_Father: {fileID: 1880331662731461752}
@@ -284,7 +268,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: cb0899f851355424eb57c830a2d67e24, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -324,7 +308,7 @@ TextMesh:
   m_FontSize: 80
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4291940817

@@ -13,6 +13,9 @@ public class Cell : MonoBehaviour
 
     public Renderer ringRenderer;
 
+    public AudioClip clickSound;
+    public AudioClip placeSound;
+
     int number = 0;
 
     bool isSinking = false;
@@ -48,6 +51,8 @@ public class Cell : MonoBehaviour
 
         if (number != 0 || !manager.canPlace) return;
 
+        AudioManager.Instance.PlaySound(clickSound);
+
         manager.canPlace = false;
 
         if (manager.currentPlayer == 1)
@@ -64,6 +69,23 @@ public class Cell : MonoBehaviour
         }
 
         manager.availableCells.Remove(this);
+    }
+
+    private void OnMouseEnter()
+    {
+        BoardManager manager = BoardManager.instance;
+
+        if (colorMaterial != defaultMaterial)
+            ringRenderer.material = colorMaterial;
+        else if (!manager.canPlace)
+            ringRenderer.material = defaultMaterial;
+        else
+            ringRenderer.material = manager.currentPlayer == 1 ? manager.player1 : manager.player2;
+    }
+
+    private void OnMouseExit()
+    {
+        ringRenderer.material = colorMaterial;
     }
 
     float lerpTime = 0;
