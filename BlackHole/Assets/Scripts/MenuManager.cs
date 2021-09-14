@@ -1,10 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
-using System;
 
 public class MenuManager : MonoBehaviour
 {
@@ -13,9 +11,17 @@ public class MenuManager : MonoBehaviour
 
     AudioSource source;
 
+    public GameObject quitButton;
+
     private void Start()
     {
         source = AudioManager.Instance.GetComponent<AudioSource>();
+
+#if UNITY_STANDALONE || UNITY_EDITOR
+        quitButton.SetActive(true);
+#else
+        quitButton.SetActive(false);
+#endif
     }
 
     public void Quit()

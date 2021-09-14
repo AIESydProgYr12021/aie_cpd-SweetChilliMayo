@@ -1774,6 +1774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 590819638}
   volumeText: {fileID: 521724773}
+  quitButton: {fileID: 1144614843}
 --- !u!4 &783672416
 Transform:
   m_ObjectHideFlags: 0
