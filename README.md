@@ -1,5 +1,7 @@
 # Black Hole
 
+https://aiesydprogyr12021.github.io/aie_cpd-SweetChilliMayo/
+
 ## About the Game
 Black Hole is a simple turn based board game where two players competitively place numbered tokens on the board until there is one empty cell left, this cell is called the black hole and the surrounding scores are counted, whoever has the lowest score after the score is counted wins the game.
 
