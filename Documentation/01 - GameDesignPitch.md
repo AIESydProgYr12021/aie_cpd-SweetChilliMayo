@@ -3,11 +3,10 @@
 Black Hole is a simple board game with both players having numbers ranging from 1-10, the aim of the game is to fill 20/21 cells with both players' tokens while ensuring your tokens are the least exposed at the end. After all tokens are placed, there will be one cell left unfilled, this cell is the 'black hole' and any cells adjacent to it will be summed for each player, whoever has the least score wins the round.
 
 ## Concept statement  
-##### The game in a tweet: one or two sentences at most that say what the game is and why it’s fun.
+Black Hole gives a fast but competitive game for 2 friends to play while bored on a road trip or stuck at a family dinner with nothing to do!
 
 ## Target audience  
-##### Age, gender, game or other relevant interests
-Any age, Any gender (people who enjoy board games)
+Black Hole has a quick play style catered towards anyone who doesn't have a lot of time to sit down and play a more in depth game. It's a fast paced strategy game with fun and vibrant graphics. The concept is simple to understand but has a large ability to be majorly expanded upon to create a much more strategy based experience. The game is suitable for anyone 10+.
 
 ## Reference
 Black Hole is a simple board game and I will be creating the digital version of this. The concept of the game will be identical to black hole but VFX and SFX will be used to enhance the experience.
@@ -16,8 +15,7 @@ Black Hole is a simple board game and I will be creating the digital version of 
 The game aims to create a competitive but fun experience for both players. The players will experience a phase where they aren't sure on strategies when they first start playing, although after time, they will learn how to interact and compete against other players.
 
 ## Unique Selling Points
-What makes your game stand out? How is it different from all other games?
-The VFX will hopefully help the game stand out from the board game itself, and it would eventually support online gameplay, allowing friends to play together online (this is a stretch goal).
+The VFX will help the game stand out from the board game itself, and it will eventually support online gameplay, allowing friends to play together online (this is a stretch goal). This game also does not exist as a digital game yet for online or single player gameplay.
 
 ## Genre
 2 Player Turn Based Strategy Board Game similar to Othello and Chess.
@@ -41,11 +39,12 @@ Simple controls will be used to help the players interact with the game in an ea
 The game works on a turn based system where after every turn made, the current player switches to the next player.
 
 ## Interactivity
-##### How are different kinds of interactivity used? (Perceptual, ST Cognitive, LT Cognitive, Emotional, Social, Cultural) What is the player doing Moment‐by‐moment? How does the player move through the world?  How does physics/combat/etc. work?
+Two players are given a board on which they can place 10 tokens linearly onto the board consisting of 21 cells. The players try to strategize against the other player to set up a scenario where they have the lowest sum at the end of the game.
 
 ## Game UI:
-##### A clear, professional‐looking sketch of the primary game UX is helpful.
-##### - menu concept/wireframe
-##### - game ui concept/wireframe
-##### - gameover/win concept/wireframe
-##### - highscores concept/wireframe
+#### Menu Screen
+![alt text](./images/MenuSceneWireframe.png "Menu Screen")
+#### Game Screen
+![alt text](./images/GameSceneWireframe.png "Game Screen")
+#### Win Screen
+![alt text](./images/WinSceneWireframe.png "Win Screen")

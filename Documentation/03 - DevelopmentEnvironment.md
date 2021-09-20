@@ -10,16 +10,20 @@ Unity 2021.1.15f1
 
 ## 3rd party libraries / assets
 
-Asset Name: `insert name here`
+Asset Name: `MainMusic.wav`
 
-URL: `insert link to asset`
+URL: Not Applicable
 
-Reason for use: describe what this asset is used for
+Creator: Wilson Khan
+
+Reason for use: Prototyped music for another game I was working on which fit the style of this game.
 
 ---
 
-Asset Name: `insert name here`
+Asset Name: `512 Sound Effects (8-bit style)`
 
-URL: `insert link to asset`
+URL: `https://opengameart.org/content/512-sound-effects-8-bit-style`
 
-Reason for use: describe what this asset is used for
+Creator: Juhani Junkala
+
+Reason for use: Used for all the sound effects in the game to create a more immersive experience.
